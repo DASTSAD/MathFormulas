@@ -1,0 +1,35 @@
+\documentclass[a4paper,9pt,twopage,titltpage]{amsbook}
+\usepackage[all]{xy}
+\usepackage{multicol}
+
+
+\newcommand{\eg}{\empf{e.g.\ }}
+\newcommand{\ie}{\empf{i.e.\ }}
+\newcommand{\etc}{\empf{etc.\ }}
+\setcounter{tocdepth}{4}
+
+\begin{document}
+\title{Mathematic Formulas}
+\date{printed on \today}
+\author{Daniel Studzinski}
+\maketitle\cleardoublepage
+
+\begin{multicols}{2}
+\tableofcontents\cleardoublepage
+
+\input{symbols}
+\input{arithmetic}
+\input{equations}
+\input{geometry}
+\input{differentials}
+\input{differentialgeometrie}
+\input{integrals}
+\input{differentialequations}
+\input{series}
+\input{statistic}
+\input{linearoptimization}
+\input{logic}
+\input{appendix}
+\end{multicols}
+
+ \end{document}
