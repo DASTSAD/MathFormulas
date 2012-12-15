@@ -1,6 +1,8 @@
-\documentclass[a4paper,9pt,twopage,titltpage]{amsbook}
-\usepackage[all]{xy}
-\usepackage{multicol}
+\documentclass[a4paper,9pt,twopage,titltpage]{article}
+\usepackage[all]{xy} % for some drawings
+\usepackage{multicol} % to save space
+\usepackage{amssymb,amsmath} %for the beautyful math symbols
+\usepackage{wasysym} %for the promile symbol
 
 
 \newcommand{\eg}{\empf{e.g.\ }}
@@ -14,7 +16,7 @@
 \author{Daniel Studzinski}
 \maketitle\cleardoublepage
 
-\begin{multicols}{2}
+
 \tableofcontents\cleardoublepage
 
 \input{symbols}
@@ -30,6 +32,6 @@
 \input{linearoptimization}
 \input{logic}
 \input{appendix}
-\end{multicols}
+
 
  \end{document}
