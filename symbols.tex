@@ -1,9 +1,9 @@
-\newcommand{\mySymbols}{\hspace*{0.2\textwidth}\=\hspace*{0.6\textwidth}\=\hspace*{0.2\textwidth}\kill}
+\newcommand{\mySymbols}{\hspace*{0.2\textwidth}\=\hspace*{0.5\textwidth}\=\hspace*{0.2\textwidth}\kill}
 
 \section{Symbols used in this book}
-\subsection{Mathematic Symbols}
+In fact \LaTeX\; is used to write this book. Often students and some other strange people have to write some kind of own papers and reports. For such particular event I did an overview for all of you with symbols used in this book and the corresponding commands in \LaTeX\; so can you easier put your own calculations on paper. But be aware: some commands are self made macros. All of such self made constructions are market in this listing with $\maltese$ and macros are printed in the listing on page \pageref{DSmyMacro} as a reference.
+\subsection{Mathematical Symbols}
 \subsubsection{Symbols of order}
-
 
 \begin{tabbing}
 \mySymbols
@@ -45,11 +45,11 @@ $ ()\; [ \;] \; \{ \} \; \langle \rangle$ \> all sorts of braces \> \verb` () [ 
 \mySymbols
 $ {\parallel}$                \> parallel                        \> \verb` \parallel `           \\
 $ {\nparallel}$               \> not parallel                    \> \verb` \nparallel `          \\
-$ {\uparrow\uparrow}$         \> parrallel and unidirectional    \> \verb` \uparrow\uparrow    ` \\
-$ {\uparrow\downarrow}$       \> parrallel and bidirectional     \> \verb` \uparrow\downarrow `  \\
+$ {\uparrow\uparrow}$         \> parallel and unidirectional    \> \verb` \uparrow\uparrow    ` \\
+$ {\uparrow\downarrow}$       \> parallel and bidirectional     \> \verb` \uparrow\downarrow `  \\
 $ {\bot}$                     \> right angle                     \> \verb` \bot `                \\
 $ {\triangle}$                \> triangle                        \> \verb` \triangle  `          \\
-$ {\cong}$                    \> congurent                       \> \verb` \cong `               \\
+$ {\cong}$                    \> congruent                       \> \verb` \cong `               \\
 $ {\sim}$                     \> similar                         \> \verb` \sim `                \\
 $\measuredangle\;\sphericalangle$  \> angle                      \> \verb` \measuredangle \sphericalangle` \\
 $ \overline{AB}$              \>                                 \> \verb` \overline{AB} `       \\
@@ -59,43 +59,182 @@ $ {\overset{\frown}{AB}}$     \>                                 \> \verb` \over
 \subsubsection{Algebra and Elements of Analysis}
 \begin{tabbing}
 \mySymbols
- $ \sgn $                            \> signum              \>  \verb` \sgn ` \\
+ $ \sgn $                            \> signum              \>  $\maltese$\verb` \sgn ` \\
  $ |z|$                              \> ...                 \>  \verb` |z| ` \\
- $ \arc\,z$                          \> arcus $z$           \>  \verb` \arc ` \\
+ $ \arc\,z$                          \> arcus $z$           \>  $\maltese$\verb` \arc ` \\
  $ n!$                               \> ...                 \>  \verb` n! ` \\
- $ {n \choose p}$                    \> ...                 \>  \verb` {n \choose p} ` \\
+ $ \binom{n}{p}$                     \> ...                 \>  \verb` \binom{n}{p} ` \\
  $ \sum $                            \> ...                 \>  \verb` \sum  ` \\
  $ \prod $                           \> ...                 \>  \verb` \prod ` \\
  $ \sqrt{\quad}\;\sqrt[n]{\quad} $   \> ...                 \>  \verb` \sqrt[n]{x} ` \\
  $i$ or $j$                          \>                     \>  \verb` i j ` \\
  $\pi $                              \>                     \>  \verb` \pi ` \\
- $\e $                               \>                     \>  \verb` \e ` \\
+ $\e $                               \>                     \>  $\maltese$\verb` \e ` \\
  $()$                                \>                     \>  \verb` () ` \\
  $|\;|$ or $\det$                    \>                     \>  \verb` | | \det` \\
+ $ $                          \> vector                    \> \verb` \vec{a} `\\
  $f(x)$                              \>                     \>  \verb` f(x) ` \\
 \end{tabbing}
 
 \subsubsection{Limits}
 \begin{tabbing}
 \mySymbols
- $\infty$                            \>                                        \> \verb` \infty `  \\
- $(a,b)$                             \>                                        \> \verb` (a,b) `  \\
- ${[a,b]}$ or $\langle a,b \rangle$  \>                                        \> \verb` [a,b]or \langle a,b \rangle `  \\
- $\to $                              \>                                        \> \verb` \to  `  \\
- $\lim $                             \>                                        \> \verb` \lim `  \\
+ $\infty$                            \>                     \> \verb` \infty `  \\
+ $(a,b)$                             \>                     \> \verb` (a,b) `  \\
+ ${[a,b]}$ or $\langle a,b \rangle$  \>                     \> \verb` [a,b]or \langle a,b \rangle `  \\
+ $\to $                              \>                     \> \verb` \to  `  \\
+ $\lim $                             \>                     \> \verb` \lim `  \\
 \end{tabbing}
 
 \subsubsection{Differentials}
-\begin{multicols}{2}
-\begin{itemize}
- \item[$ $]
-\end{itemize}
-\end{multicols}
-%\item[$ $]
+\begin{tabbing}
+\mySymbols
+ $\Delta f $            \>                     \> \verb` \Delta f  `  \\
+ $f'(x)\, , f''(x) $    \>                     \> \verb` f'(x) f''(x) `  \\
+ $f^{(n)}(x) $          \>                     \> \verb` f^{(n)}(x)  `  \\
+ $\dot{\varphi}(t)\, ,\ddot{\varphi}(t)$
+                        \>                     \> \verb` \dot{} \ddot{}`  \\
+ $y',y'',y''' $         \>                     \> \verb` y' y'' y''' `  \\
+ $ \d $                 \>                     \> $\maltese$ \verb` \d ` \\
+ $\d f(x) $             \>                     \> \verb` \d f(x)  `  \\
+ $\frac{\d y}{\d x},\frac{\d^2 x}{\d x^2},\dots \frac{\d^n y}{\d x^n} $ 
+                        \>                     \> \verb` \frac{\d^n y}{\d x^n}  `  \\
+ $f_x , f_y$            \>                     \> \verb` f_x  f_y  `  \\
+ $\partial $            \>                     \> \verb` \partial  `  \\
+ $f_{xx} , f_{xy} $     \>                     \> \verb`   `  \\
+ $f_{yx} , f_{yy} $     \>                     \> \verb`   `  \\
+ $\d f(x;y) $           \>                     \> \verb`   `  \\
+\end{tabbing}
 
-%\hspace*{0.2\textwidth}\=\hspace{0.6\textwidth}\=\hspace{0.2\textwidth}\kill
-%$ {1.}$\> first element\> \verb` 1. `\\
-%$ {, .}$\> coma, point \> \verb` , . `\\
-%$ {\dots}$\> until... \> \verb` \dots `\\
-%$ a_1,a_2,\dots ,a_n$\> $a$ one, $a$ two, until $a$ $n$ \> \verb` a_1, ` \\
+\subsubsection{Integral}
+\begin{tabbing}
+\mySymbols
+ $\int $                \>                     \> \verb`   `  \\
+ $\int f(x) \d x $      \>                     \> \verb`   `  \\
+ $\int\limits^b_a f(x) \d x $
+                        \>                     \> \verb`   `  \\
+ $F(x)\big|^a_b $       \>                     \> \verb`   `  \\
+ $\oint $               \>                     \> \verb`   `  \\
+\end{tabbing}
+
+\subsubsection{Exponential and logarithms functions}
+\begin{tabbing}
+\mySymbols
+ $\exp x $             \>                     \> \verb`   `  \\
+ $\log_a $             \>                     \> \verb`   `  \\
+ $\lg $                \>                     \> \verb`   `  \\
+ $\ln $                \>                     \> \verb`   `  \\
+\end{tabbing}
+
+\subsubsection{Trigonometric and Hyperboloid functions}
+\begin{tabbing}
+\mySymbols
+ $\sin$                \>                     \> \verb`   `  \\
+ $\cos $               \>                     \> \verb`   `  \\
+ $\tan $               \>                     \> \verb`   `  \\
+ $\cot $               \>                     \> \verb`   `  \\
+\\
+ $\arcsin $            \>                     \> \verb`   `  \\
+ $\arccos $            \>                     \> \verb`   `  \\
+ $\arctan $            \>                     \> \verb`   `  \\
+ $\arccot $            \>                     \> \verb`   `  \\
+\\ 
+ $\sinh $              \>                     \> \verb`   `  \\
+ $\cosh $              \>                     \> \verb`   `  \\
+ $\tanh $              \>                     \> \verb`   `  \\
+ $\coth $              \>                     \> \verb`   `  \\
+\\
+ $\arcsinh $           \>                     \> \verb`   `  \\
+ $\arccosh $           \>                     \> \verb`   `  \\
+ $\arctanh $           \>                     \> \verb`   `  \\
+ $\arccoth $           \>                     \> \verb`   `  \\
+\end{tabbing}
+
+\subsection{Symbols of Sets}
+\begin{tabbing}
+\mySymbols
+ $\mathcal{A}=\{a_k\}=\{a_1,a_2\dots a_k\}$ 
+                       \>                     \> \verb`   `  \\
+ $\in $                \>                     \> \verb` \in  `  \\
+ $\not\in $            \>                     \> \verb` \not\in  `  \\
+ $= $                  \>                     \> \verb` = `  \\
+ $\{\,\},\,\emptyset$  \>                     \> \verb` \{ \}   \emptyset`  \\
+ $\subset     $        \>                     \> \verb` \subset`  \\
+ $\subseteq   $        \>                     \> \verb` \subseteq`  \\
+ $\cup        $        \>                     \> \verb` \cup         `  \\
+ $\cap        $        \>                     \> \verb` \cap         `  \\
+ $\setminus   $        \>                     \> \verb` \setminus    `  \\
+ $\rightarrow $        \>                     \> \verb` \rightarrow  `  \\
+ $\times      $        \>                     \> \verb` \times       `  \\
+ $\setP $              \>                     \> $\maltese$ \verb` \setP  `  \\
+ $\setN $              \>                     \> $\maltese$ \verb` \setN  `  \\
+ $\setZ $              \>                     \> $\maltese$ \verb` \setZ  `  \\
+ $\setQ $              \>                     \> $\maltese$ \verb` \setQ  `  \\
+ $\setR $              \>                     \> $\maltese$ \verb` \setR  `  \\
+ $\setC $              \>                     \> $\maltese$ \verb` \setC  `  \\
+ $\setH $              \>                     \> $\maltese$ \verb` \setH  `  \\
+ $\setE $              \>                     \> $\maltese$ \verb` \setE  `  \\
+\end{tabbing}
+
+\subsection{Symbols of Logic}
+\begin{tabbing}
+\mySymbols
+$ A_1 \Rightarrow A_2 $    \>  Implication ($A_1$ therefore $A_2$)     \> \verb` \Rightarrow `  \\
+$ A_1 \Leftrightarrow A_2 $\>  Equivalence ($A_1$ equivalent to $A_2$) \> \verb` \Leftrightarrow `  \\
+$ \neg A_1 $               \>  Negation (NOT)          \> \verb` \neg `  \\
+$ A_1 \wedge A_2 $         \>  Conjunction (AND)       \> \verb` \wedge `  \\
+$ A_1 \vee A_1 $           \>  Disjunction (OR)        \> \verb` \vee `  \\
+$ A_1 \oplus A_2 $         \>  Antivalence (XOR)       \> \verb` \oplus `  \\
+\end{tabbing}
+
+\section{Other symbols}
+\newcommand{\mySymbolss}{\hspace*{0.1\textwidth}\=\hspace*{0.4\textwidth}\=\hspace*{0.1\textwidth}\=\hspace*{0.3\textwidth}\kill}
+
+
+If for any reason this symbols should be not enough for your paper there are plenty of other symbols available. I put this one I know here down and let you decide if it is for some use to you.
+\subsection{Text Symbols}
+\subsubsection{Special characters}
+\begin{tabbing}
+\mySymbolss
+\dag   \>  \verb` \dag  ` \> \ddag   \>  \verb` \ddag `  \\
+\S   \>  \verb` \S  ` \> \P   \>  \verb` \P `  \\
+\i   \>  \verb` \i  ` \> \j  \>  \verb` \j `  \\
+\copyright \> \verb` \copyrigh  ` \> \circledR  \>  \verb` \circledR `  \\
+\textcircled{a} \> \verb` \textcircled{a} ` \> \texttrademark  \>  \verb` \texttrademark `  \\
+\checkmark   \>  \verb` \checkmark  ` \> \maltese  \>  \verb` \maltese `  \\
+\end{tabbing}
+\subsubsection{Command characters}
+\begin{tabbing}
+\mySymbolss
+\$   \>  \verb` \$  ` \> \&  \>  \verb` \$ `  \\
+\#   \>  \verb` \#  ` \> \%  \>  \verb` \% `  \\
+\{   \>  \verb` \{  ` \> \}  \>  \verb` \} `  \\
+\_   \>  \verb` \_  ` \>   \\
+\end{tabbing}
+\subsubsection{Accents}
+\newsavebox{\mySa}
+\sbox{\mySa}{\makebox{\=a}}
+
+\newsavebox{\mySb}
+\sbox{\mySb}{\makebox{\'a}}
+
+\newsavebox{\mySc}
+\sbox{\mySc}{\makebox{\`a}}
+
+\begin{tabbing}
+\mySymbolss
+\usebox{\mySb}     \>  \verb` \'a  `  \> \usebox{\mySc}    \>   \verb" \`a "    \\
+\^a     \>  \verb` \^a  `  \> \"a    \>   \verb` \"a `    \\
+\~a     \>  \verb` \~a  `  \> \usebox{\mySa}    \>   \verb` \=a `    \\
+\u{a}   \>  \verb` \u{a} ` \> \v{a}   \>  \verb` \v{a} `  \\
+\H{a}   \>  \verb` \H{a} ` \> \t{aa}  \>  \verb` \t{aa}`  \\
+\r{a}   \>  \verb` \r{a} ` \> \b{a}   \>  \verb` \b{a} `  \\
+\usebox{\mySd} \> \verb` \d{a} ` \footnotemark \> \c{a} \>  \verb` \c{a} `  \\
+\end{tabbing}
+\footnotetext{I admit: this is cheated. On page \pageref{DSmyMacro} you can see I did reuse the \mbox{\texttt{$\backslash$d\{a\}}} command for a math symbol. Here you can see what this command does in origin meaning. To preserve this command for this place it was necessary to save it in a \texttt{box} and let it drop dawn on this position.}
+
+
+%\begin{tabbing}
+%\mySymbols
+% $ $                            \>                     \> \verb`   `  \\
 %\end{tabbing}

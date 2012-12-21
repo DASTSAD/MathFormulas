@@ -1,27 +1,27 @@
-\documentclass[a4paper,10pt,twoside,titltpage]{article}
+\documentclass[a4paper,10pt,twoside,titlepage]{article}
 \usepackage[all]{xy}             % for some drawings
 \usepackage{multicol}            % to save space
+\usepackage{latexsym}
 \usepackage{amssymb,amsmath}     % for the beautiful math symbols
 \usepackage{wasysym}             % or the "promile" symbol
 \usepackage{verbatim}            % so you can see this
 \usepackage{makeidx}             % for the Index
 \makeindex
 
-\newcommand{\eg}{\empf{e.g.\ }}  % exampli gratia (for the sake of example)
-\newcommand{\ie}{\empf{i.e.\ }}  % id est (that is)
-\newcommand{\etc}{\empf{etc.\ }} % et cetera (and other things)
-\newcommand{\e}{\mathrm{e}}      % 2.71828182846
-\newcommand{\arc}{\mathrm{arc}}
-\newcommand{\sgn}{\mathrm{sgn}}
+
 \setcounter{tocdepth}{4}         % more details for the TOC
 \pagestyle{headings}
 
 \begin{document}
+\newsavebox{\mySd}
+\sbox{\mySd}{\makebox{\d{a}}}
+\input{DSmyMacro}
 \title{Mathematic Formulas}
 \date{printed on \today}
 \author{Daniel Studzinski}
-\maketitle                        \clearpage
-\verbatiminput{MathFormula.tex}   \clearpage
+\maketitle
+\section*{Macros used in this book}
+\verbatiminput{DSmyMacro.tex}   \label{DSmyMacro}\clearpage
 \tableofcontents                  \cleardoublepage
 
 \input{symbols}
