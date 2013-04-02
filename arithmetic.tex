@@ -1,4 +1,38 @@
 \section{Arithmetic}
 \subsection{Set Theory}
 \subsubsection{Basic Therms}
-By putting all objects with common 
+By putting objects with common properties into groups we create a {\em set}. 
+Creation of sets is a basic function of our brain. The set of trees, set of animals and many many more.
+The objects in such a set are calles {\em elements}.
+\begin{example}\label{ex:set}
+\[ \mathbb{A} = \{ 1, 2, 3, 5, 7, \} \]
+\[ \mathbb{B} = \{ 2, 4, \dots , 2n \} \]
+\[ \setQ = \{\frac{a}{b} \; | \; a,b \in \setZ \wedge b \ne 0 \} \] 
+\end{example}
+
+Elements of a set can also be points in $\mathbf{E}^n$ ($n$-dimensional space) and so such a set can be 
+called {\em set of points}. In case the common property of such a set is a solution of a particular 
+equation we are are already in a section about functions. Later more about this.
+
+If every element $a_i$ of a set $\mathcal{A}$ is a member of a set $\mathcal{B}$, too, 
+than we can say that $\mathcal{A}$ is an subset of $\mathcal{B}$.
+\[ \mathcal{A} \subset \mathcal{B} \Leftrightarrow \mathcal{B} \supset \mathcal{A} \]
+
+\begin{flalign}
+\mbox{reflexive rule } & & \mathcal{A}\subseteq\mathcal{A},\;\; \emptyset\subset\mathcal{A} & \;\;\; \\
+\mbox{transitive rule } & & \mathcal{A}\subset\mathcal{B}\wedge\mathcal{B}\subset\mathcal{C}\Rightarrow\mathcal{A}\subset\mathcal{C}\\
+ & & \mathcal{A}\subseteq\mathcal{B}\wedge\mathcal{B}\subseteq\mathcal{A}\Leftrightarrow\mathcal{A}=\mathcal{B}\\
+ & & \mathcal{A}=\mathcal{B}\;\forall\; x \in \mathcal{A} \wedge x \in \mathcal{B}\\
+\mbox{symetrical rule } & & \mathcal{A}=\mathcal{B}\Leftrightarrow \mathcal{B}=\mathcal{A}\\
+\mbox{transitive rule } & & \mathcal{A}=\mathcal{B}\wedge \mathcal{B}=\mathcal{C}\Rightarrow \mathcal{A}=\mathcal{C}
+\end{flalign}
+
+\begin{example}
+\begin{itemize}
+	\item The set $\{1, 2 \}$ is a proper subset of $\{ 1, 2, 3 \}$.
+	\item Any set is a {\em subset} of itself, but not a {\em proper subset}.
+	\item The empty set $\{ \} $, denoted by $\emptyset $, is also a subset of any given set $\mathbb{X}$. It is also always a proper subset of any set except itself.
+	\item The set $\{x\; | \; x\in\setP\; \wedge\; x > 2 \}$ is a proper subset of 
+	        $ \{ 2y+1 \; | \; y\in\setN \}$
+\end{itemize}
+\end{example}

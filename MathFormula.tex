@@ -1,4 +1,4 @@
-\documentclass[a4paper,10pt,twoside,titlepage]{article}
+\documentclass[a4paper,10pt,twoside,titlepage]{book}
 \usepackage[all]{xy}             % for some drawings
 \usepackage{multicol}            % to save space
 \usepackage{latexsym}
@@ -6,6 +6,7 @@
 \usepackage{wasysym}             % or the "promile" symbol
 \usepackage{verbatim}            % so you can see this
 \usepackage{makeidx}             % for the Index
+\usepackage{lipsum}
 \makeindex
 
 
@@ -24,6 +25,7 @@
 \verbatiminput{DSmyMacro.tex}   \label{DSmyMacro}\clearpage
 \tableofcontents                  \cleardoublepage
 
+\chapter{Mathematical formulars}
 \input{symbols}
 \input{arithmetic}
 \input{equations}

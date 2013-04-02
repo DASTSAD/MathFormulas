@@ -1,7 +1,7 @@
 \newcommand{\mySymbols}{\hspace*{0.2\textwidth}\=\hspace*{0.5\textwidth}\=\hspace*{0.2\textwidth}\kill}
 
 \section{Symbols used in this book}
-In fact \LaTeX\; is used to write this book. Often students and some other strange people have to write some kind of own papers and reports. For such particular event I did an overview for all of you with symbols used in this book and the corresponding commands in \LaTeX\; so can you easier put your own calculations on paper. But be aware: some commands are self made macros. All of such self made constructions are market in this listing with $\maltese$ and macros are printed in the listing on page \pageref{DSmyMacro} as a reference.
+In fact \LaTeX\; is used to write this book. Often students and some other strange people have to write some homeworks or even reports. For such particular event I did an overview with symbols used in this book and the corresponding commands in \LaTeX\; so can you easier put your own thoughts on paper. But be aware: some commands are self made macros. All of such self made constructions are market in this listing with $\maltese$ and macros are printed in the listing on page \pageref{DSmyMacro} as a reference.
 \subsection{Mathematical Symbols}
 \subsubsection{Symbols of order}
 
@@ -72,7 +72,7 @@ $ {\overset{\frown}{AB}}$     \>                                 \> \verb` \over
  $\e $                               \>                     \>  $\maltese$\verb` \e ` \\
  $()$                                \>                     \>  \verb` () ` \\
  $|\;|$ or $\det$                    \>                     \>  \verb` | | \det` \\
- $ $                          \> vector                    \> \verb` \vec{a} `\\
+ $\vec{a} $                          \> vector                    \> \verb` \vec{a} `\\
  $f(x)$                              \>                     \>  \verb` f(x) ` \\
 \end{tabbing}
 
@@ -95,23 +95,23 @@ $ {\overset{\frown}{AB}}$     \>                                 \> \verb` \over
  $\dot{\varphi}(t)\, ,\ddot{\varphi}(t)$
                         \>                     \> \verb` \dot{} \ddot{}`  \\
  $y',y'',y''' $         \>                     \> \verb` y' y'' y''' `  \\
- $ \d $                 \>                     \> $\maltese$ \verb` \d ` \\
- $\d f(x) $             \>                     \> \verb` \d f(x)  `  \\
- $\frac{\d y}{\d x},\frac{\d^2 x}{\d x^2},\dots \frac{\d^n y}{\d x^n} $ 
-                        \>                     \> \verb` \frac{\d^n y}{\d x^n}  `  \\
+ $ \de $                 \>                     \> $\maltese$ \verb` \de ` \\
+ $\de f(x) $             \>                     \> \verb` \de f(x)  `  \\
+ $\frac{\de y}{\de x},\frac{\de^2 y}{\de x^2},\dots \frac{\de^n y}{\de x^n} $ 
+                        \>                     \> \verb` \frac{\de^n y}{\de x^n}  `  \\
  $f_x , f_y$            \>                     \> \verb` f_x  f_y  `  \\
  $\partial $            \>                     \> \verb` \partial  `  \\
  $f_{xx} , f_{xy} $     \>                     \> \verb`   `  \\
  $f_{yx} , f_{yy} $     \>                     \> \verb`   `  \\
- $\d f(x;y) $           \>                     \> \verb`   `  \\
+ $\de f(x;y) $           \>                     \> \verb`   `  \\
 \end{tabbing}
 
 \subsubsection{Integral}
 \begin{tabbing}
 \mySymbols
  $\int $                \>                     \> \verb`   `  \\
- $\int f(x) \d x $      \>                     \> \verb`   `  \\
- $\int\limits^b_a f(x) \d x $
+ $\int f(x) \de x $      \>                     \> \verb`   `  \\
+ $\int\limits^b_a f(x) \de x $
                         \>                     \> \verb`   `  \\
  $F(x)\big|^a_b $       \>                     \> \verb`   `  \\
  $\oint $               \>                     \> \verb`   `  \\
@@ -121,6 +121,7 @@ $ {\overset{\frown}{AB}}$     \>                                 \> \verb` \over
 \begin{tabbing}
 \mySymbols
  $\exp x $             \>                     \> \verb`   `  \\
+ $\log $               \>                     \> \verb`   `  \\
  $\log_a $             \>                     \> \verb`   `  \\
  $\lg $                \>                     \> \verb`   `  \\
  $\ln $                \>                     \> \verb`   `  \\
@@ -134,46 +135,48 @@ $ {\overset{\frown}{AB}}$     \>                                 \> \verb` \over
  $\tan $               \>                     \> \verb`   `  \\
  $\cot $               \>                     \> \verb`   `  \\
 \\
+\\
  $\arcsin $            \>                     \> \verb`   `  \\
  $\arccos $            \>                     \> \verb`   `  \\
  $\arctan $            \>                     \> \verb`   `  \\
  $\arccot $            \>                     \> \verb`   `  \\
 \\ 
+\\
  $\sinh $              \>                     \> \verb`   `  \\
  $\cosh $              \>                     \> \verb`   `  \\
  $\tanh $              \>                     \> \verb`   `  \\
  $\coth $              \>                     \> \verb`   `  \\
 \\
- $\arcsinh $           \>                     \> \verb`   `  \\
- $\arccosh $           \>                     \> \verb`   `  \\
- $\arctanh $           \>                     \> \verb`   `  \\
- $\arccoth $           \>                     \> \verb`   `  \\
+\\
+ $\arsinh $           \>                     \> \verb`   `  \\
+ $\arcosh $           \>                     \> \verb`   `  \\
+ $\artanh $           \>                     \> \verb`   `  \\
+ $\arcoth $           \>                     \> \verb`   `  \\
 \end{tabbing}
 
 \subsection{Symbols of Sets}
 \begin{tabbing}
 \mySymbols
- $\mathcal{A}=\{a_k\}=\{a_1,a_2\dots a_k\}$ 
-                       \>                     \> \verb`   `  \\
+ $\mathcal{A}=\{a_k\}=\{a_1,a_2\dots a_k\}$ \\
  $\in $                \>                     \> \verb` \in  `  \\
  $\not\in $            \>                     \> \verb` \not\in  `  \\
  $= $                  \>                     \> \verb` = `  \\
  $\{\,\},\,\emptyset$  \>                     \> \verb` \{ \}   \emptyset`  \\
- $\subset     $        \>                     \> \verb` \subset`  \\
- $\subseteq   $        \>                     \> \verb` \subseteq`  \\
- $\cup        $        \>                     \> \verb` \cup         `  \\
- $\cap        $        \>                     \> \verb` \cap         `  \\
- $\setminus   $        \>                     \> \verb` \setminus    `  \\
- $\rightarrow $        \>                     \> \verb` \rightarrow  `  \\
- $\times      $        \>                     \> \verb` \times       `  \\
- $\setP $              \>                     \> $\maltese$ \verb` \setP  `  \\
- $\setN $              \>                     \> $\maltese$ \verb` \setN  `  \\
- $\setZ $              \>                     \> $\maltese$ \verb` \setZ  `  \\
- $\setQ $              \>                     \> $\maltese$ \verb` \setQ  `  \\
- $\setR $              \>                     \> $\maltese$ \verb` \setR  `  \\
- $\setC $              \>                     \> $\maltese$ \verb` \setC  `  \\
- $\setH $              \>                     \> $\maltese$ \verb` \setH  `  \\
- $\setE $              \>                     \> $\maltese$ \verb` \setE  `  \\
+ $\subset     $        \> subset                    \> \verb` \subset`  \\
+ $\subseteq   $        \> subset or equivalent \> \verb` \subseteq`  \\
+ $\cup        $        \> union               \> \verb` \cup         `  \\
+ $\cap        $        \> intersection        \> \verb` \cap         `  \\
+ $\setminus   $        \> difference          \> \verb` \setminus    `  \\
+ $\rightarrow $        \> map on              \> \verb` \rightarrow  `  \\
+ $\times      $        \> set product         \> \verb` \times       `  \\
+ $\setP $              \> prime numbers set   \> $\maltese$ \verb` \setP  `  \\
+ $\setN $              \> natural numbers set \> $\maltese$ \verb` \setN  `  \\
+ $\setZ $              \> integer numbers set \> $\maltese$ \verb` \setZ  `  \\
+ $\setQ $              \> quotient numbers set\> $\maltese$ \verb` \setQ  `  \\
+ $\setR $              \> real numbers set    \> $\maltese$ \verb` \setR  `  \\
+ $\setC $              \> complex numbers set \> $\maltese$ \verb` \setC  `  \\
+ $\setH $              \> quaternions set     \> $\maltese$ \verb` \setH  `  \\
+ $\setS $              \> solution set        \> $\maltese$ \verb` \setE  `  \\
 \end{tabbing}
 
 \subsection{Symbols of Logic}
@@ -187,12 +190,11 @@ $ A_1 \vee A_1 $           \>  Disjunction (OR)        \> \verb` \vee `  \\
 $ A_1 \oplus A_2 $         \>  Antivalence (XOR)       \> \verb` \oplus `  \\
 \end{tabbing}
 
-\section{Other symbols}
+\subsection{Other symbols}
 \newcommand{\mySymbolss}{\hspace*{0.1\textwidth}\=\hspace*{0.4\textwidth}\=\hspace*{0.1\textwidth}\=\hspace*{0.3\textwidth}\kill}
 
 
 If for any reason this symbols should be not enough for your paper there are plenty of other symbols available. I put this one I know here down and let you decide if it is for some use to you.
-\subsection{Text Symbols}
 \subsubsection{Special characters}
 \begin{tabbing}
 \mySymbolss
@@ -229,9 +231,8 @@ If for any reason this symbols should be not enough for your paper there are ple
 \u{a}   \>  \verb` \u{a} ` \> \v{a}   \>  \verb` \v{a} `  \\
 \H{a}   \>  \verb` \H{a} ` \> \t{aa}  \>  \verb` \t{aa}`  \\
 \r{a}   \>  \verb` \r{a} ` \> \b{a}   \>  \verb` \b{a} `  \\
-\usebox{\mySd} \> \verb` \d{a} ` \footnotemark \> \c{a} \>  \verb` \c{a} `  \\
+\usebox{\mySd} \> \verb` \d{a} `  \> \c{a} \>  \verb` \c{a} `  \\
 \end{tabbing}
-\footnotetext{I admit: this is cheated. On page \pageref{DSmyMacro} you can see I did reuse the \mbox{\texttt{$\backslash$d\{a\}}} command for a math symbol. Here you can see what this command does in origin meaning. To preserve this command for this place it was necessary to save it in a \texttt{box} and let it drop dawn on this position.}
 
 
 %\begin{tabbing}
